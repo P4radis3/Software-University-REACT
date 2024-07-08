@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    
+    background-color: #fcf9efc4;
+    border-radius: 1.2em;
+    
+    width: 413px;
+    height: auto;
+    
+    padding: 1.5em;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    
+}
+
+.loginPage h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.loginPage p {
+    text-align: center;
+}
+
+.loginPage input {
+    padding: 0 0.8em 0 0.8em;
+
+}
+
+.loginPage label,
+.loginPage input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.buttonSubmit {
+    padding: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(36, 126, 48);
+}
+
+.buttonSubmit:hover {
+    background-color: rgb(59, 129, 74);
+}
