@@ -1371,19 +1371,15 @@
             },
             "985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
                 _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                name: "Roast Trout",
-                img: "assets/fish.jpg",
+                name: "The Night Circus",
+                img: "../src/assets/the-night-circus.png",
                 note: [
-                    "4 cups Ingredient 1",
-                    "1 tbsp Ingredient 2",
-                    "1 tbsp Ingredient 3",
-                    "750 g  Ingredient 4",
-                    "25 g Ingredient 5"
+                    `I am eternally grateful to the readers who have found magic within these pages and made 'The Night Circus' part of their lives. This book was an exploration of dreams, imagination, and the power of stories, and I am thrilled it has resonated with so many. To every reader, thank you for stepping into the circus and letting it take up residence in your hearts.`,
+
                 ],
                 quote: [
-                    "Prepare note",
-                    "Mix note",
-                    "Cook until done"
+                    "The finest of pleasures are always the unexpected ones.",
+                    "Life takes us to unexpected places sometimes. The future is never set in stone, remember that."
                 ],
                 _createdOn: 1613551388703
             }
