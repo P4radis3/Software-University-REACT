@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import * as booksService from "../../../services/bookService";
 
-import BookItem from "./book-item/BookItem";
+import BookItem from "./book-item/Book Item";
+
 import styles from "./AllBooks.module.css";
 
 export default function AllBooks() {
