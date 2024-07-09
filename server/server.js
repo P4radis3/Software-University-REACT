@@ -1371,15 +1371,14 @@
             },
             "985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
                 _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                name: "The Night Circus",
-                img: "../src/assets/the-night-circus.png",
+                name: "Me before You",
+                img: "../src/assets/me-before-you.png",
                 note: [
-                    `I am eternally grateful to the readers who have found magic within these pages and made 'The Night Circus' part of their lives. This book was an exploration of dreams, imagination, and the power of stories, and I am thrilled it has resonated with so many. To every reader, thank you for stepping into the circus and letting it take up residence in your hearts.`,
-
+                    `I wrote 'Me Before You' to explore the lives of two people who wouldn't have met in the ordinary course of their days, and to investigate the many ways in which we can be trapped by circumstances, by our own preconceived ideas of what we can or should do with our lives. It is also, at its heart, a love story, a tale of the way that one person can irrevocably transform the course of another person's life.`,
                 ],
                 quote: [
-                    "The finest of pleasures are always the unexpected ones.",
-                    "Life takes us to unexpected places sometimes. The future is never set in stone, remember that."
+                    "Live boldly. Push yourself. Don’t settle.",
+                    "You only get one life. It’s actually your duty to live it as fully as possible."
                 ],
                 _createdOn: 1613551388703
             }
