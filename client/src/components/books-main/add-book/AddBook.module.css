@@ -1,0 +1,60 @@
+.bookInfo {
+    background-color: #eee;
+    padding: 2.5em;
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1.2em;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.bookInfo input {
+    padding: 0.5em;
+    height: 3em;
+    font-size: 1em;
+}
+
+.bookInfo label {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    width: 70%;
+    min-width: 20vw;
+    min-height: 10vh;
+    border-radius: 0.7em;
+    font-size: 1em;
+    margin-top: 1.2em;
+}
+
+.bookInfo h2 {
+    text-align: center;
+}
+
+.bookInfo label,
+.bookInfo input {
+    width: 70%;
+    outline: none;
+    border: none;
+}
+
+.buttonSubmit {
+    margin-top: 1.5em;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1.5em;
+    font-size: 10em;
+}
+
+.buttonSubmit:hover {
+    background-color: #bbb;
+}
