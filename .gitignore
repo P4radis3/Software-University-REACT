@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+FIREBASE-DEPLOYMENT
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
