@@ -11,6 +11,8 @@ import BookDetails from "./components/books-main/book-details/Book Details";
 import AddBook from "./components/books-main/add-book/Add Book";
 import EditBook from "./components/books-main/edit-book/Edit Book";
 
+import NotFound from "./components/not-found/NotFound";
+
 import Login from "./components/auth/login/Login";
 import Register from "./components/auth/register/Register";
 import Logout from "./components/auth/logout/Logout";
@@ -33,6 +35,8 @@ function App() {
                 <Route path="/all-books/:bookId" element={<BookDetails />} />
                 <Route path="/add-book" element={<AddBook />} />
                 <Route path="/all-books/:bookId/edit-book" element={<EditBook />} />
+
+                <Route path="*" element={<NotFound />} />
               
                 <Route path="/logout" element={<Logout />} />
             </Routes>
