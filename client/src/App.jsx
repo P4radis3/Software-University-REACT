@@ -11,7 +11,7 @@ import BookDetails from "./components/books-main/book-details/Book Details";
 import AddBook from "./components/books-main/add-book/Add Book";
 import EditBook from "./components/books-main/edit-book/Edit Book";
 
-import NotFound from "./components/not-found/NotFound";
+import NotFound from "./components/not-found/Not Found";
 
 import Login from "./components/auth/login/Login";
 import Register from "./components/auth/register/Register";
