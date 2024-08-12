@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import * as bookService from "../../../services/bookService";
@@ -6,6 +6,8 @@ import { validateInputs } from "../../../utils/validateFieldsUtil";
 
 import styles from "./AddBook.module.css";
 import { validateStructure } from "../../../utils/validateStructure";
+
+import AuthContext from "../../../contexts/authContext";
 
 export default function AddBook() {
     const [book, setBook] = useState({
@@ -16,15 +18,22 @@ export default function AddBook() {
     });
     const [inputErrors, setInputErrors] = useState({});
     const [structureErrors, setStructureErrors] = useState({});
-    
+
+    const { id } = useContext(AuthContext);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!id) {
+            navigate("/login");
+        }
+    }, []);
 
     const onChange = (e) => {
         setBook(state => ({
             ...state,
             [e.target.name]: e.target.value
         }));
-        
+
         setInputErrors(state => ({
             ...state,
             [e.target.name]: null
@@ -45,7 +54,7 @@ export default function AddBook() {
                 note: values.note.split("\n"),
                 quote: values.quote.split("\n"),
             }
-    
+
             try {
                 await bookService.createBook(data);
                 navigate("/all-books");
@@ -53,13 +62,13 @@ export default function AddBook() {
                 console.error(error.message);
                 throw error;
             }
-        
+
         } else if (Object.keys(errors).length !== 0) {
             setInputErrors(errors);
         } else if (Object.keys(typeErrors).length !== 0) {
             setStructureErrors(typeErrors);
         }
-        
+
     };
 
     return (
@@ -74,6 +83,7 @@ export default function AddBook() {
                 <label htmlFor="img">Image URL:</label>
                 <input type="text" id="img" name="img" onChange={onChange} value={book.img} />
                 {inputErrors && <p className="error">{inputErrors.img}</p>}
+                {structureErrors && <p className="error">{structureErrors.img}</p>}
 
                 <label htmlFor="note">Author's Note:</label>
                 <textarea name="note" id="note" onChange={onChange} value={book.note} placeholder="Enter note separated by a new line..."></textarea>

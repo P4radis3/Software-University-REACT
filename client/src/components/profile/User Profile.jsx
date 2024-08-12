@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import * as bookService from "../../services/bookService";
 import AuthContext from "../../contexts/authContext";
@@ -10,8 +11,10 @@ import styles from "./UserProfile.module.css";
 export default function UserProfile() {
     const { id, username } = useContext(AuthContext);
     const [books, setBooks] = useState([]);
+    const navigate = useNavigate();
 
-    useEffect(() => { bookService.getBooksForUser(id).then(res => setBooks(res)).catch(err => console.log(err)) }, []);
+    useEffect(() => { bookService.getBooksForUser(id).then(res => setBooks(res)).catch(err => console.log(err)); }, [id]);
+    useEffect(() => { if (!id) { navigate("/"); } }, [id, navigate]);
 
     return (
         <div className={styles.profile}>
