@@ -14,7 +14,7 @@ export default function UserProfile() {
     const navigate = useNavigate();
 
     useEffect(() => { bookService.getBooksForUser(id).then(res => setBooks(res)).catch(err => console.log(err)); }, [id]);
-    useEffect(() => { if (!id) { navigate("/"); } }, [id, navigate]);
+    useEffect(() => { if (!id) { navigate("/login"); } }, [id, navigate]);
 
     return (
         <div className={styles.profile}>
